@@ -1,39 +1,23 @@
 *{
-    margin: 0;
+    background-color: #363636;
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
 }
-.main{
-    background: #0c0d0f;
-    min-height: 100vh;
-    width: 100%;
-    color: #fff;
-    position: relative;
-}
-nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 250px 20%;
-    gap: 20px;
-}
-nav .album{
-    margin: 20px;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s, filter 0.7s;;
-}
-nav .album:hover{
-    transform: scale(1.1);
-}
-nav .album.clicked{
-    transform: scale(1.75);
-    z-index: 1;
-}
-nav .album.blur{
-    filter: blur(5px);
-    z-index: 0;
-}
-
+.treeBox {
+    background-color: #0F0E10;
+    height: 90%;
+    width: 48%;
+    margin-left: 50%;
+    margin-right: 2%;
+    margin-top: 3%;
+    border-radius: 10px;
+} 
+.optionsBox {
+    background-color: #6E7368;
+    height: 80%;
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 3%;
+    border-radius: 10px;
+}  
