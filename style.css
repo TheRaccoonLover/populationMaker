@@ -4,20 +4,27 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
-.treeBox {
-    background-color: #0F0E10;
-    height: 90%;
-    width: 48%;
-    margin-left: 50%;
-    margin-right: 2%;
-    margin-top: 3%;
-    border-radius: 10px;
-} 
+.flex-container {
+    display: flex;
+}
+.flex-child {
+    flex: 1;
+}
+.flex-child:first-child {
+    margin-left: 50px;
+    margin-right: 20px;
+}
 .optionsBox {
     background-color: #6E7368;
-    height: 80%;
-    width: 30%;
-    margin-left: 2%;
-    margin-top: 3%;
+    height: 84%;
+    width: 80%;
+    margin-top: 15%;
     border-radius: 10px;
 }  
+.treeBox {
+    background-color: #0F0E10;
+    height: 800px;
+    width: 95%;
+    margin-top: 5%;
+    border-radius: 10px;
+} 
