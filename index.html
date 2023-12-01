@@ -1,18 +1,24 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Population Maker</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
-</body>
-  <div class="flex-container">
-
-    <div class="flex-child options">
-      <div class="optionsBox"></div>
+<body>
+    <div class="flex-container">
+        <div class="flex-child options">
+            <div class="optionsBox">
+                <input type="text" class="textBox">
+                <button onclick="updateFamilyTree()">Update Tree</button>
+            </div>
+        </div>
+        <div class="flex-child tree">
+            <div class="treeBox"></div>
+        </div>
     </div>
-    <div class="flex-child tree">
-      <div class="treeBox"></div>
-    </div>
-  </div>
+    <script src="main.js"></script>
 </body>
-
 </html>

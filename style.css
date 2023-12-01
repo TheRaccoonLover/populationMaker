@@ -27,4 +27,13 @@
     width: 95%;
     margin-top: 5%;
     border-radius: 10px;
-} 
+}
+.textBox {
+    background-color: #53574f;
+    width: 50%;
+    height: 50px;
+    margin-left: 23%;
+    margin-top: 10%;
+    margin-bottom: 80%;
+    font-size: xx-large;
+}
