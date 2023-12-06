@@ -1,5 +1,13 @@
-const optionsMenu = document.getElementById('optionsMenu');
+const averageKids = 2;
+const startingPop = 2;
 
-optionsMenu.addEventListener('click', function(event) {
-    album.classList.toggle('clicked');
+document.addEventListener('DOMContentLoaded', function() {
+    var optionsMenu = document.getElementsByClassName('optionsMenu');
+
+    Array.from(optionsMenu).forEach(function(optionsMenu) {
+        optionsMenu.addEventListener('click', function() {
+            optionsMenu.classList.toggle('clicked');
+            getRandomArbitrary(averageKids);
+        });
+    });
 });
