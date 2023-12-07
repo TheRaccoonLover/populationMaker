@@ -7,7 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
     Array.from(optionsMenu).forEach(function(optionsMenu) {
         optionsMenu.addEventListener('click', function() {
             optionsMenu.classList.toggle('clicked');
-            getRandomArbitrary(averageKids);
+            
+            try {
+                calculateGenerations(12519, startingPop, averageKids);
+            } catch (error) {
+                console.error(error.message);
+            }
         });
     });
 });
