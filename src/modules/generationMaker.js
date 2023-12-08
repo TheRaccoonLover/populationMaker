@@ -1,16 +1,15 @@
-arrayNameUWU = [];
-generations = 0;
-familyArray = [];
+let generations = 0;
+let familyArray = [];
+let populationTree = [];
 
 function getRandomArbitrary(average) {
-    max = average + 1;
-    min = average - 2;
-    decimal = (Math.random() * (max - min) + min);
-    roundedNumber = Math.round(decimal);
-    arrayNameUWU.push(roundedNumber);
+    let max = average + average;
+    let min = average - average;
+    let decimal = (Math.random() * (max - min) + min);
+    let roundedNumber = Math.round(decimal);
     //console.log(roundedNumber);
     return roundedNumber;
-    calculateAverage(arrayNameUWU);
+    
 }
 
 function calculateAverage(array) {
@@ -35,9 +34,12 @@ function sumArray(array) {
 
 function getGenerationPop(population, average) {
     let currentValue = 0;
+    const generationArray = [];
 
     while (currentValue < population) {
-        familyArray.push(getRandomArbitrary(average));
+        const randomValue = getRandomArbitrary(average);
+        familyArray.push(randomValue);
+        generationArray.push(randomValue);
         currentValue = sumArray(familyArray);
         console.log("Population: " + population);
         console.log("Sum of the array: " + sumArray(familyArray));
@@ -48,9 +50,12 @@ function getGenerationPop(population, average) {
         }
     }
 
+    populationTree.push(generationArray);
+
 }
 
 function calculateGenerations(population, startingPopulation, average) {
+    populationTree = [];
 
     while (population > startingPopulation) {
 
@@ -62,4 +67,6 @@ function calculateGenerations(population, startingPopulation, average) {
         console.log("Generations: " + generations);
         generations++;
     }
+
+    console.log("Population Tree: " + populationTree);
 }
