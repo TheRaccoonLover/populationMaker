@@ -10,12 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         optionsMenu.addEventListener('click', function() {
             optionsMenu.classList.toggle('clicked');
             
-            const startTime = performance.now();
             calculateGenerations(12519, startingPop, averageKids, lifeSpan);
-            const endTime = performance.now();
-            const duration = endTime - startTime;
-            const durationInSeconds = Math.round(duration / 1000);
-            console.log("Function took " + durationInSeconds + " seconds");
         });
     });
 });
